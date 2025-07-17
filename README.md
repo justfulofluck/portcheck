@@ -1,6 +1,3 @@
-Here is the updated **README.md** with your specific instructions:
-
----
 
 # PortCheck
 
