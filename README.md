@@ -4,7 +4,7 @@ Here is the updated **README.md** with your specific instructions:
 
 # PortCheck
 
-**PortCheck** is a simple Linux CLI tool written in C to check if a specific TCP port is open on a given hostname or IP address.
+**PortCheck** is a Linux CLI tool written in C to check if a specific TCP port is open on a given hostname or IP address.
 
 ---
 
