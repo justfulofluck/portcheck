@@ -103,6 +103,3 @@ MIT License
 
 Contributions and suggestions are welcome! Feel free to fork the repository and submit pull requests.
 
----
-
-Let me know if you'd like me to draft a **release note template** or **GitHub Actions workflow to auto-build the `.deb` package**!
