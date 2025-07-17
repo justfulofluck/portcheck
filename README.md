@@ -1,29 +1,30 @@
-Here is a complete **README.md** suitable for your GitHub repository:
+Here is the updated **README.md** with your specific instructions:
 
 ---
 
 # PortCheck
 
-**PortCheck** is a lightweight CLI tool written in C to check if a specific port is open on a given hostname or IP address.
-You can easily build it or download the prebuilt `.deb` package to install and run on your Linux system.
+**PortCheck** is a simple Linux CLI tool written in C to check if a specific TCP port is open on a given hostname or IP address.
 
 ---
 
-## 📦 Download & Install via `.deb` package
+## 📦 Install PortCheck on Debian/Ubuntu
 
-1. **Download the latest `.deb` package:**
+I have provided a **`.deb` package** for easy installation on **Debian** or **Ubuntu-based** distributions.
+
+### 🔽 Step 1: Download the `.deb` package
 
 ```bash
 wget https://github.com/yourusername/portcheck/releases/latest/download/portcheck.deb
 ```
 
-2. **Install the package:**
+### ⚙️ Step 2: Install the package
 
 ```bash
 sudo dpkg -i portcheck.deb
 ```
 
-If any dependencies are missing, fix them with:
+If you see any dependency errors, fix them using:
 
 ```bash
 sudo apt --fix-broken install
@@ -31,7 +32,9 @@ sudo apt --fix-broken install
 
 ---
 
-## ⚙️ Usage
+## 🚀 How to Use
+
+Once installed, you can use `portcheck` directly from the terminal:
 
 ```bash
 portcheck <hostname_or_ip> <port>
@@ -40,42 +43,42 @@ portcheck <hostname_or_ip> <port>
 ### Example
 
 ```bash
-portcheck example.com 80
+portcheck google.com 443
 ```
 
-**Output:**
+**Output Example:**
 
 ```
-Scanning host: example.com port: 80
-Port 80 is OPEN
+Scanning host: google.com port: 443
+Port 443 is OPEN
 ```
 
-If the port is closed, the output will be:
+If the port is closed:
 
 ```
-Port 80 is CLOSED
+Port 443 is CLOSED
 ```
 
 ---
 
-## 🔨 Build from Source
+## 🛠️ Build from Source (Optional)
 
-If you'd like to build from source:
+If you'd rather build it from the source code:
 
-1. **Clone the repository:**
+1. **Clone the repository**
 
 ```bash
 git clone https://github.com/yourusername/portcheck.git
 cd portcheck
 ```
 
-2. **Compile:**
+2. **Compile**
 
 ```bash
 gcc -o portcheck portcheck.c
 ```
 
-3. **Run:**
+3. **Run**
 
 ```bash
 ./portcheck <hostname_or_ip> <port>
@@ -83,23 +86,23 @@ gcc -o portcheck portcheck.c
 
 ---
 
-## 🐧 Supported Platforms
+## 🐧 Supported OS
 
-* Ubuntu/Debian-based systems (via `.deb` package)
-* Any Linux distribution with `gcc` to compile from source
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
+* Debian / Ubuntu / Other Debian-based systems (via `.deb` package)
+* Any Linux distribution (via source compilation)
 
 ---
 
-## 🤝 Contributions
+## 📄 License
 
-Contributions, issues, and feature requests are welcome! Feel free to submit a PR or open an issue.
+MIT License
 
 ---
 
-Let me know if you want me to write the **control file** or **deb packaging instructions** too!
+## 🤝 Contributing
+
+Contributions and suggestions are welcome! Feel free to fork the repository and submit pull requests.
+
+---
+
+Let me know if you'd like me to draft a **release note template** or **GitHub Actions workflow to auto-build the `.deb` package**!
